@@ -1,5 +1,5 @@
 class Maven38 < Formula
-  desc "Java-based project management"
+  desc "Maven 3.8 for MuleSoft development"
   homepage "https://maven.apache.org/"
   url "https://archive.apache.org/dist/maven/maven-3/3.8.8/binaries/apache-maven-3.8.8-bin.tar.gz"
   mirror "https://archive.apache.org/dist/maven/maven-3/3.8.8/binaries/apache-maven-3.8.8-bin.tar.gz"
@@ -11,7 +11,7 @@ class Maven38 < Formula
     regex(/href=.*?apache-maven[._-]v?(\d+(?:\.\d+)+)-bin\.t/i)
   end
 
-  depends_on "openjdk"
+  depends_on "temurin8"
 
   conflicts_with "mvn", because: "also installs a 'mvn' executable"
   conflicts_with "mvnvm", because: "also installs a 'mvn' executable"
