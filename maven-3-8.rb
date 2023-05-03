@@ -13,6 +13,7 @@ class Maven38 < Formula
 
   depends_on "openjdk"
 
+  conflicts_with "mvn", because: "also installs a 'mvn' executable"
   conflicts_with "mvnvm", because: "also installs a 'mvn' executable"
 
   def install
