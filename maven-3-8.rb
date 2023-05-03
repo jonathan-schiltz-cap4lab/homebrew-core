@@ -11,16 +11,6 @@ class Maven38 < Formula
     regex(/href=.*?apache-maven[._-]v?(\d+(?:\.\d+)+)-bin\.t/i)
   end
 
-  bottle do
-    sha256 cellar: :any_skip_relocation, arm64_ventura:  "17811e108701af5985bf5167abbd47c06e92c6c6bd1c13a1a1c095c9b4ecc32a"
-    sha256 cellar: :any_skip_relocation, arm64_monterey: "17811e108701af5985bf5167abbd47c06e92c6c6bd1c13a1a1c095c9b4ecc32a"
-    sha256 cellar: :any_skip_relocation, arm64_big_sur:  "17811e108701af5985bf5167abbd47c06e92c6c6bd1c13a1a1c095c9b4ecc32a"
-    sha256 cellar: :any_skip_relocation, ventura:        "17811e108701af5985bf5167abbd47c06e92c6c6bd1c13a1a1c095c9b4ecc32a"
-    sha256 cellar: :any_skip_relocation, monterey:       "17811e108701af5985bf5167abbd47c06e92c6c6bd1c13a1a1c095c9b4ecc32a"
-    sha256 cellar: :any_skip_relocation, big_sur:        "17811e108701af5985bf5167abbd47c06e92c6c6bd1c13a1a1c095c9b4ecc32a"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:   "17811e108701af5985bf5167abbd47c06e92c6c6bd1c13a1a1c095c9b4ecc32a"
-  end
-
   depends_on "openjdk"
 
   conflicts_with "mvnvm", because: "also installs a 'mvn' executable"
