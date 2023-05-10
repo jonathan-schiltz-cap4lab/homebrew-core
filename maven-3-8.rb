@@ -15,7 +15,8 @@ class Maven38 < Formula
     regex(/href=.*?apache-maven[._-]v?(\d+(?:\.\d+)+)-bin\.t/i)
   end
 
-  depends_on "temurin8"
+  # TODO: Use syntax for setting depends on with temurin8 cask.
+  #depends_on "temurin8"
 
   conflicts_with "mvn", because: "also installs a 'mvn' executable"
   conflicts_with "mvnvm", because: "also installs a 'mvn' executable"
