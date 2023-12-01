@@ -18,6 +18,8 @@ class Jmeter < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux:   "30e671f75a56f645115bb3f5c91968afcfbb89643565737a1c18d79928c9bf83"
   end
 
+  # I use Temurin 8 JDK because it's currently still the Mulesoft reccomended JDK to run Mule applications.
+  # I deny any responsibiliy for this formulae becoming outdated or causing any harm. Use at your own risk.
   depends_on "temurin8"
 
   resource "jmeter-plugins-manager" do
