@@ -5,10 +5,13 @@ class Maven38 < Formula
   mirror "https://archive.apache.org/dist/maven/maven-3/3.8.8/binaries/apache-maven-3.8.8-bin.tar.gz"
   sha256 "17811e108701af5985bf5167abbd47c06e92c6c6bd1c13a1a1c095c9b4ecc32a"
   license "Apache-2.0"
+
+  # As of 2023-12-01, Mulesoft released Anypoint Studio 7.16 which include support for Mule Maven Plugin 4 and Maven 3.9.
+  # As a consequence, this formulae is DISCONTINUED and will be deleted on 2025-01-01.
   
   # As of 2023-05-03, Maven v3.9.1 (latest stable) is not supported by Mule Maven Plugin v3.8.4 (latest stable) because the latter uses deprecated features.
   # Since Homebrew Core does not feature Maven v3.8, I've decided to create and maintain my own tap for my personal usage until Mulesoft delivers a new version of the Mule Maven Plugin that supports the latest Maven version.
-  # I decline responsibility for any damage caused by the usage of this software.
+  # I decline responsibility for any damage caused by the usage of this software. Use at your own risk.
 
   livecheck do
     url "https://maven.apache.org/download.cgi"
