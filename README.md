@@ -4,9 +4,15 @@ Here's my personal collection of Homebrew formulaes.
 
 I decline responsibility for any damage caused by the usage of this software.
 
+## Install JMeter
+
+This tap contains a JMeter formulae for Mulesoft developers to use with Temurin 8 JDK.
+To use it, run `brew install jonathan-schiltz-cap4lab/homebrew-core/jmeter`.
+
 ## Install Maven 3.8
 
-This tap contains a Maven 3.8 formulae.
+WARN: This is a deprecated formulae. Please use 
+This tap contains a Maven 3.8 formulae for Mulesoft developers that cannot upgrade Maven higher than 3.8.x for compatibility reasons.
 To use it, run `brew install jonathan-schiltz-cap4lab/homebrew-core/maven-3-8`.
 
 ## Contribute
