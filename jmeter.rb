@@ -22,7 +22,7 @@ class Jmeter < Formula
     rm_f Dir["bin/*.bat"]
     prefix.install_metafiles
     libexec.install Dir["*"]
-    bin.install_symlink libexec/"jmeter"
+    bin.install_symlink libexec/"bin/jmeter"
 
     resource("jmeter-plugins-manager").stage do
       (libexec/"lib/ext").install Dir["*"]
