@@ -20,7 +20,9 @@ class Jmeter < Formula
 
   # I use Temurin 8 JDK because it's currently still the Mulesoft reccomended JDK to run Mule applications.
   # I deny any responsibiliy for this formulae becoming outdated or causing any harm. Use at your own risk.
-  depends_on "temurin8"
+  # I commented depends_on because I could not find any documentation for a cask dependency on a formulae.
+  # This formulae therefore implicitely assumes that Temurin 8 JDK is installed and JAVA_HOME references it.
+  # depends_on "temurin8"
 
   resource "jmeter-plugins-manager" do
     url "https://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-manager/1.9/jmeter-plugins-manager-1.9.jar"
@@ -32,7 +34,7 @@ class Jmeter < Formula
     rm_f Dir["bin/*.bat"]
     prefix.install_metafiles
     libexec.install Dir["*"]
-    (bin/"jmeter").write_env_script libexec/"bin/jmeter", JAVA_HOME: Formula["temurin8"].opt_prefix
+    (bin/"jmeter").write_env_script libexec/"bin/jmeter"
 
     resource("jmeter-plugins-manager").stage do
       (libexec/"lib/ext").install Dir["*"]
