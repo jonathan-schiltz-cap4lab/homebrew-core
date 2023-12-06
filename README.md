@@ -11,7 +11,7 @@ To use it, run `brew install jonathan-schiltz-cap4lab/homebrew-core/jmeter`.
 
 ## Install Maven 3.8
 
-WARN: This is a deprecated formulae. Please use 
+WARN: This is a deprecated formulae. Please use the main tap: https://github.com/Homebrew/homebrew-core/blob/HEAD/Formula/m/maven.rb.
 This tap contains a Maven 3.8 formulae for Mulesoft developers that cannot upgrade Maven higher than 3.8.x for compatibility reasons.
 To use it, run `brew install jonathan-schiltz-cap4lab/homebrew-core/maven-3-8`.
 
