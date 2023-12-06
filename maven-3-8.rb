@@ -5,6 +5,7 @@ class Maven38 < Formula
   mirror "https://archive.apache.org/dist/maven/maven-3/3.8.8/binaries/apache-maven-3.8.8-bin.tar.gz"
   sha256 "17811e108701af5985bf5167abbd47c06e92c6c6bd1c13a1a1c095c9b4ecc32a"
   license "Apache-2.0"
+  deprecate! date: "2025-01-01", because: "Mule Maven Plugin 4 made this formulae irrelevant. Use Homebrew core Maven formulae instead."
 
   # As of 2023-12-01, Mulesoft released Anypoint Studio 7.16 which include support for Mule Maven Plugin 4 and Maven 3.9.
   # As a consequence, this formulae is DISCONTINUED and will be deleted on 2025-01-01.
