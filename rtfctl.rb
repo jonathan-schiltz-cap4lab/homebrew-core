@@ -9,11 +9,13 @@ class Rtfctl < Formula
   # I crafted this formula because it's not provided by MuleSoft.
   # I decline any responsibility for harm caused by this formula. Use at your own risk.
   # I don't plan to proactively maintain the version.
+  # TODO fix symlink.
 
   def install
     prefix.install_metafiles
     libexec.install Dir["*"]
-    bin.install_symlink libexec/"rtfctl-1.0.29" "rtfctl"
+    mv libexec/"rtfctl-1.0.29" libexec/"rtfctl"
+    bin.install_symlink libexec/"rtfctl"
   end
 
   test do
