@@ -13,10 +13,10 @@ class Rtfctl < Formula
   def install
     prefix.install_metafiles
     libexec.install Dir["*"]
-    bin.install_symlink libexec/"rtfctl"
+    bin.install_symlink libexec/"rtfctl-1.0.29" "rtfctl"
   end
 
   test do
-    system "#{bin}/rtfctl", "version"
+    system "rtfctl", "version"
   end
 end
