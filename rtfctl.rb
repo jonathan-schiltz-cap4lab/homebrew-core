@@ -1,4 +1,4 @@
-class RTFCTL < Formula
+class Rtfctl < Formula
   desc "Anypoint Runtime Fabric Command-Line Tool"
   homepage "https://anypoint.mulesoft.com"
   url "https://anypoint.mulesoft.com/runtimefabric/api/download/rtfctl-darwin/1.0.29"
