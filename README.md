@@ -4,6 +4,11 @@ Here's my personal collection of Homebrew formulaes.
 
 I decline responsibility for any damage caused by the usage of this software.
 
+## Install Anypoint Runtime Fabric Command-Line Tool (rtfctl)
+
+This tap contains an rtfctl formulae for Mulesoft architects to use.
+To use it, run `brew install jonathan-schiltz-cap4lab/homebrew-core/rtfctl`.
+
 ## Install JMeter
 
 This tap contains a JMeter formulae for Mulesoft developers to use with Temurin 8 JDK.
