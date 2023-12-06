@@ -11,7 +11,7 @@ class Rtfctl < Formula
   # I don't plan to proactively maintain the version.
 
   def install
-    libexec.install "rtfctl-1.0.29" => "rtfctl"
+    bin.install "rtfctl-1.0.29" => "rtfctl"
   end
 
   test do
